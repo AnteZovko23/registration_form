@@ -75,46 +75,46 @@ export default function MyCheckbox() {
         <FormGroup>
             {/* Centered label bold */}
             <Typography component="h1" variant="h6" align="left" marginBottom="15px" fontWeight="bold"> 
-            Coaching Program (Choose one of the Options Below):
+            Coaching Program (Choose One of the Options Below):
             </Typography>
 
             <Grid container spacing={2}>
                 
-                <Grid item xs={6}>
+                <Grid item xs={12}>
                     <FormControlLabel
                         control={<Checkbox checked={checked} onChange={handleChange} />}
                         label="Battalion Commander Assessment Program (BCAP24)"
                     />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12}>
                     <FormControlLabel
                         control={<Checkbox checked={checked2} onChange={handleChange2} />}
                         label="Acquisition Leader Assessment Program (ALAP24)"
                     />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12}>
                     <FormControlLabel
                         control={<Checkbox checked={checked3} onChange={handleChange3} />}
-                        label="Sergeant Major Assessment Program (SMAP) "
+                        label="Sergeant Major Assessment Program (SMAP24) "
                     />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12}>
                     <FormControlLabel
                         control={<Checkbox checked={checked4} onChange={handleChange4}/>}
-                        label="Chaplains Assessment Program (DCHAP)"
+                        label="Division Chaplain Assessment Program (DCHAP24)"
                     />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12}>
                     <FormControlLabel
                         control={<Checkbox checked={checked5} onChange={handleChange5}/>}
-                        label="Colonel Commander Assessment Program (CCAP 2024)"
+                        label="Colonel Commander Assessment Program (CCAP24)"
                     />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12}>
                     <FormControlLabel
                         control={<Checkbox checked={checked6} onChange={handleChange6}/>}
                         label="Medical Commanders Assessment Program
-                        (MCAP)"
+                        (MCAP24)"
                     />
                 </Grid>
             </Grid>

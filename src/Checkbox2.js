@@ -55,12 +55,12 @@ export default function MyCheckbox_2() {
             />
             <FormControlLabel
                 control={<Checkbox checked={checked2} onChange={handleChange2} />}
-                label={<Typography variant="body1" color="text.primary">Coaching Only <BasicTooltip title={<b>Five 5 Coaching Sessions Only (Does not include the EQ-I Assessment)</b>}></BasicTooltip></Typography>}
+                label={<Typography variant="body1" color="text.primary">Coaching Only <BasicTooltip title={<Typography variant='body2'><b>Five 5 Coaching Sessions Only (Does not include the EQ-I Assessment)</b></Typography>}></BasicTooltip></Typography>}
                 labelPlacement="end"
             />  
             <FormControlLabel
                 control={<Checkbox checked={checked3} onChange={handleChange3} />}
-                label={<Typography variant="body1" color="text.primary">Opt-Out <BasicTooltip title={<b>Opt-Out and Do Not Receive Any Additional Developmental Opportunities (If you do not select any option, it is assumed that you are opting out entirely)</b>}></BasicTooltip></Typography>}
+                label={<Typography variant="body1" color="text.primary">Opt-Out <BasicTooltip title={<Typography variant='body2'><b>Opt-Out and Do Not Receive Any Additional Developmental Opportunities (If you do not select any option, it is assumed that you are opting out entirely)</b></Typography>}></BasicTooltip></Typography>}
                 labelPlacement="end"
                 
             />

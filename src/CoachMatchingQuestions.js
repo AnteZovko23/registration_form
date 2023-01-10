@@ -5,13 +5,7 @@ import {FormControlLabel, Checkbox} from '@mui/material';
 
 export default function Checkbox_4() {
 
-const [checked, setChecked] = React.useState(false);
-const [checked2, setChecked2] = React.useState(false);
-const [checked3, setChecked3] = React.useState(false);
-const [checked4, setChecked4] = React.useState(false);
-const [checked5, setChecked5] = React.useState(false);  
-const [checked6, setChecked6] = React.useState(false);
-const [checked7, setChecked7] = React.useState(false);
+
 
 // Declare 37 constants for the 37 checkboxes
 const [checked8, setChecked8] = React.useState(false);
@@ -66,115 +60,258 @@ const [checked55, setChecked55] = React.useState(false);
 const [checked56, setChecked56] = React.useState(false);
 
 
-
-const handleChange = (event) => {
-    setChecked(event.target.checked);
-    setChecked2(false);
-    document.getElementById("no_no").style.display = "none";
-    if (checked === true) {
-        document.getElementById("no_no").style.display = "block";
-    }
-
-};
-
-const handleChange2 = (event) => {
-    setChecked2(event.target.checked);
-    setChecked(false);
-
-
-};
-
-const handleChange3 = (event) => {
-    setChecked3(event.target.checked);
-    setChecked4(false);
-setChecked5(false);
-setChecked6(false);
-setChecked7(false);
-};
-
-const handleChange4 = (event) => {
-    setChecked4(event.target.checked);
-    setChecked3(false);
-    setChecked5(false);
-    setChecked6(false);
-    setChecked7(false);
-};
-
-const handleChange5 = (event) => {
-    setChecked5(event.target.checked);
-    setChecked3(false);
-    setChecked4(false);
-    setChecked6(false);
-    setChecked7(false);
-};
-
-const handleChange6 = (event) => {
-    setChecked6(event.target.checked);
-    setChecked3(false);
-    setChecked4(false);
-    setChecked5(false);
-    setChecked7(false);
-}; 
-
-const handleChange7 = (event) => {
-    setChecked7(event.target.checked);
-    setChecked3(false);
-    setChecked4(false);
-    setChecked5(false);
-    setChecked6(false);
-};
+const [count, setCount] = React.useState(0);
 
 
 const handleChange8 = (event) => {
-    setChecked8(event.target.checked);
+    if (count < 10) {
+        setChecked8(event.target.checked);
+        console.log(event.target.checked)
+        if (event.target.checked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+        console.log(count)
+    }
+    else {
+        if (event.target.checked) {
+            setChecked8(false);
+            setCount(count - 1);
+        }
+        console.log(count)
+
+       
+    }
+    
+
 };
 
 const handleChange9 = (event) => {
-    setChecked9(event.target.checked);
+    if (count <= 10) {
+        setChecked9(event.target.checked);
+        if (event.target.checked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+    }
+    else {
+        if (event.target.checked) {
+            setChecked9(false);
+            setCount(count - 1);
+
+        }
+    }
 };
 
 const handleChange10 = (event) => {
-    setChecked10(event.target.checked);
+    if (count <= 10) {
+        setChecked10(event.target.checked);
+        if (event.target.checked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+    }
+    else {
+        if (event.target.checked) {
+            setChecked10(false);
+            setCount(count - 1);
+
+        }
+    
+    }
 };
 
 const handleChange11 = (event) => {
-    setChecked11(event.target.checked);
+        if (count <= 10) {
+        setChecked11(event.target.checked);
+        if (event.target.checked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+    }
+    else {
+        if (event.target.checked) {
+            setChecked11(false);
+            setCount(count - 1);
+
+        }
+
+    }
 };
 
 const handleChange12 = (event) => {
-    setChecked12(event.target.checked);
+        if (count <= 10) {
+        setChecked12(event.target.checked);
+        if (event.target.checked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+    }
+    else {
+        if (event.target.checked) {
+            setChecked12(false);
+            setCount(count - 1);
+
+        }
+     
+    }
 };
 
 const handleChange13 = (event) => {
-    setChecked13(event.target.checked);
+        if (count <= 10) {
+        setChecked13(event.target.checked);
+        if (event.target.checked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+    }
+    else {
+        if (event.target.checked) {
+            setChecked13(false);
+            setCount(count - 1);
+
+        }
+  
+    }
 };
 
 const handleChange14 = (event) => {
-    setChecked14(event.target.checked);
+        if (count <= 10) {
+        setChecked14(event.target.checked);
+        if (event.target.checked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+    }
+    else {
+        if (event.target.checked) {
+            setChecked14(false);
+            setCount(count - 1);
+
+        }
+     
+    }
 };
 
 const handleChange15 = (event) => {
-    setChecked15(event.target.checked);
+        if (count <= 10) {
+        setChecked15(event.target.checked);
+        if (event.target.checked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+    }
+    else {
+        if (event.target.checked) {
+            setChecked15(false);
+            setCount(count - 1);
+
+        }
+   
+    }
 };
 
 const handleChange16 = (event) => {
-    setChecked16(event.target.checked);
+        if (count <= 10) {
+        setChecked16(event.target.checked);
+        if (event.target.checked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+    }
+    else {
+        if (event.target.checked) {
+            setChecked16(false);
+            setCount(count - 1);
+
+        }
+     
+    }
 };
 
 const handleChange17 = (event) => {
-    setChecked17(event.target.checked);
+        if (count <= 10) {
+        setChecked17(event.target.checked);
+        if (event.target.checked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+    }
+    else {
+        if (event.target.checked) {
+            setChecked17(false);
+            setCount(count - 1);
+
+        }
+    
+    }
 };
 
 const handleChange18 = (event) => {
-    setChecked18(event.target.checked);
+       if (count <= 10) {
+        setChecked18(event.target.checked);
+        if (event.target.checked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+    }
+    else {
+        if (event.target.checked) {
+            setChecked18(false);
+            setCount(count - 1);
+
+        }
+      
+    }
 };
 
 const handleChange19 = (event) => {
-    setChecked19(event.target.checked);
+        if (count <= 10) {
+        setChecked19(event.target.checked);
+        if (event.target.checked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+    }
+    else {
+        if (event.target.checked) {
+            setChecked19(false);
+            setCount(count - 1);
+
+        }
+    
+    }
 };
 
 const handleChange20 = (event) => {
-    setChecked20(event.target.checked);
+        if (count <= 10) {
+        setChecked20(event.target.checked);
+        if (event.target.checked) {
+            setCount(count + 1);
+        } else {
+            setCount(count - 1);
+        }
+    }
+    else {
+        if (event.target.checked) {
+            setChecked20(false);
+            setCount(count - 1);
+
+        }
+  
+    }
 };
 
 const handleChange21 = (event) => {
@@ -369,6 +506,10 @@ const handleChange56 = (event) => {
 };
 
 
+// Counter that allows up to 10 choices to be selected
+// Between 8 and 42
+
+
 
 
 
@@ -378,110 +519,9 @@ const handleChange56 = (event) => {
 return (
 
     <FormGroup>
-    <Typography variant="h6">Have you ever had a coach before?</Typography>
-
-        <FormControlLabel
-            control={
-                <Checkbox
-                    checked={checked}
-                    onChange={handleChange}
-                    inputProps={{ 'aria-label': 'controlled' }}
-                />
-            }
-            label="Yes"
-        />
-        <FormControlLabel
-                    id="no_no"
-
-            control={
-                <Checkbox
-                    checked={checked2}
-                    onChange={handleChange2}
-                    inputProps={{ 'aria-label': 'controlled' }}
-                />
-            }
-            label="No"
-        />
-
-        {checked === true && (
-            <FormControl>
-                <Typography variant="h6">What was your experience like?</Typography>
-                <FormControlLabel
-                    control={
-                        <Checkbox
-                            checked={checked3}
-                            onChange={handleChange3}
-                            inputProps={{ 'aria-label': 'controlled' }}
-                        />
-                    }
-                    label="Extraordinary"
-                />
-                <FormControlLabel
-                    control={
-                        <Checkbox
-                            checked={checked4}
-                            onChange={handleChange4}
-                            inputProps={{ 'aria-label': 'controlled' }}
-                        />
-                    }
-                    label="Exceeded expectations"
-                />
-                <FormControlLabel
-                    control={
-                        <Checkbox
-                            checked={checked5}  
-                            onChange={handleChange5}
-                            inputProps={{ 'aria-label': 'controlled' }}
-                        />
-                    }
-                    label="Fully Met expectations"
-                />
-                <FormControlLabel
-                    control={
-                        <Checkbox
-                            checked={checked6}
-                            onChange={handleChange6}
-                            inputProps={{ 'aria-label': 'controlled' }}
-                        />
-                    }
-                    label="Slightly met expectations"
-                />
-                <FormControlLabel
-                    control={
-                        <Checkbox
-                            checked={checked7}
-                            onChange={handleChange7}
-                            inputProps={{ 'aria-label': 'controlled' }}
-                        />
-                    }
-                    label="Did not meet expectations"
-                />
-                <FormControlLabel
-                    control={
-
-                        <TextField
-                        // Full width text field          
-                        fullWidth
-                        id="outlined-basic"
-                        label="Explain how you rated your experience"
-                        variant="outlined"
-                        multiline
-                        rows={4}
-                            
-                        />
-                    }
-                />
-
-            
-                
-
-            </FormControl>
-
-            
-        )
-        }
+   
     <br></br>
-    <Typography variant="h6">What are you looking for in a coach? (Select all that apply)</Typography>
+    <Typography variant="h6">What are you looking for in a coach? (Select up to 10 that apply)</Typography>
         <FormControl>
             <FormControlLabel
                 control={

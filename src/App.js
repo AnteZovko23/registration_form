@@ -63,7 +63,7 @@ export default function SignUp() {
         {/* center img */}
             <img src={Img} alt="army logo" style={{display: 'block', marginLeft: 'auto', marginRight: 'auto'}}/>
           <Typography component="h1" variant="h4" align="center">
-            ARMY COACHING PROGRAM SERVICES
+            ARMY COACHING PROGRAM(ACP) SERVICES
           </Typography>
 
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
